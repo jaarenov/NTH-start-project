@@ -4,5 +4,141 @@
 
 
 .page-header {
+    border-bottom: solid 1px @gray-lighter;
+    margin: 0 auto;
 
+  &__inner {
+    margin: 0 auto;
+    padding: 10px 0;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @media (min-width: @screen-sm) {
+      width: @container-sm;
+    }
+    @media (min-width: @screen-md) {
+      width: @container-md;
+    }
+    @media (min-width: @screen-lg) {
+      width: @container-lg;
+    }
+  }
+
+  &__contacts {
+    margin-right: 10px;
+
+    display: none;
+    @media (min-width: @screen-lg) {
+      display: block;
+    }
+  }
+
+  &__phone-link {
+    font-family: @pt-sans-cap;
+    font-size: @font-size-18;
+    color: @gray-darker;
+    font-weight: bold;
+  }
+
+  &__address {
+    font-family: @fira-sans-reg;
+    font-size: @font-size-14;
+    color: @gray-darker;
+  }
+
+  .btn  {
+    display: none;
+
+    @media (min-width:@screen-lg) {
+      display: block;
+      }
+  }
+}
+
+
+.main-nav {
+  display: none;
+
+  @media (min-width:@screen-lg) {
+    display: flex;
+  }
+
+  &__list {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    margin-right: 50px;
+  }
+
+  &__item {
+    margin-right: 15px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-family: @fira-sans-reg;
+    font-size: @font-size-14;
+    font-weight: 400;
+    color: @gray-darker;
+    transition: 0.3s ease all;
+  }
+
+  &__link:hover {
+    color: @orange-base;
+  }
+}
+
+
+.main-logo {
+  @media (min-width: 0px) and (max-width: 1200px) {
+    margin: 0 auto;
+  }
+}
+
+.hamburger {
+  position: absolute;
+  top: 30px;
+  right: 5%;
+
+  &__wrapper {
+    position: relative;
+    width: 25px;
+    height: 18px;
+  }
+  @media (min-width:@screen-lg) {
+    display: none;
+  }
+  @media (min-width: 0px) and (max-width: 320px) {
+    right: 18%;
+  }
+
+ span {
+   position: absolute;
+   width: 25px;
+   height: 4px;
+   background-color: @orange-base;
+   top: 0px;
+ }
+
+ span:before {
+   content: "";
+   position: absolute;
+   width: 25px;
+   height: 4px;
+   background-color: @orange-base;
+   top: 7px;
+ }
+
+ span:after {
+   content: "";
+   position: absolute;
+   width: 25px;
+   height: 4px;
+   background-color: @orange-base;
+   top: 14px;
+ }
 }

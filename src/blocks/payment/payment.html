@@ -1,0 +1,27 @@
+<!--DEV
+
+Нужно убрать пробел между @-ами:
+
+@@include('blocks/payment/payment.html')
+
+-->
+<div class="payment">
+  <div class="payment__inner">
+    <div class="step-title">Шаг 5</div>
+    <div class="payment__title">Способ оплаты</div>
+
+    <section class="payment__to-pay">
+      <div class="payment__to-pay-title">К оплате</div>
+    </section>
+
+    <section class="payment__pay-arrival">
+      <input type="radio" name="pay_type">
+      <div class="payment__pay-arrival">По приезду</div>
+    </section>
+
+    <section class="payment__pay-now">
+        <input type="radio" name="pay_type">
+        <div class="payment__pay-now-text">Сейчас</div>
+    </section>
+  </div>
+</div>

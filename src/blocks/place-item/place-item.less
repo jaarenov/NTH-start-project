@@ -1,0 +1,28 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/place-item/place-item.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.place-item {
+  color: @gray-darker;
+
+  &__title{
+    font-family: @pt-serif-reg;
+    font-size: @font-size-26;
+    letter-spacing: 0.4px;
+
+  }
+
+  &__cost {
+    font-family: @fira-sans-med;
+    font-size: @font-size-14;
+    text-transform: uppercase;
+  }
+
+  &__cost-number--fc-orange {
+    font-family: @fira-sans-med;
+    font-size: @font-size-18;
+    color: @orange-base;
+  }
+
+}

@@ -6,5 +6,35 @@
 
 -->
 <header class="page-header">
-  page-header
+  <div class="page-header__inner">
+    <a href="/" class="main-logo"><img src="././img/main-logo.png" alt="logo-picture"></a>
+
+    <div class="hamburger">
+      <a href="#">
+        <div class="hamburger__wrapper">
+          <span></span>
+        </div>
+      </a>
+    </div>
+
+    <div class="main-nav">
+      <nav class="main-nav__nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link" href="">Номера</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="">Коттедж</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="">Ресторан</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="">Отдых</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="">Контакты</a></li>
+        </ul>
+      </nav>
+      <span class="main-nav__toggler"></span>  <!-- span при неполной загрузке(без css) выведет структуру разметки -->
+    </div>
+
+    <div class="page-header__contacts">
+      <a href="tel:+7812000000" class="page-header__phone-link">+7 812 777-55-88</a>
+      <div class="page-header__address">г. Санкт-Петербург, Приморское ш.600 </div>
+    </div>
+
+    <a href="#booking-form" class="btn btn--icon-calendar"><i class="btn--icon-style fa fa-calendar-o" aria-hidden="true"></i>Забронировать</a> <!-- используется а чтобы при отключеном джс и цсс просто работал скрол как якорная ссылка -->
+  </div>
 </header>

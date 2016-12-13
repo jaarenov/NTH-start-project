@@ -5,4 +5,60 @@
 
 .page-footer {
 
+  &__inner {
+    margin: 0 auto;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+
+
+    @media (min-width: @screen-sm) {
+      width: @container-sm;
+      justify-content: center;
+    }
+    @media (min-width: @screen-md) {
+      width: @container-md;
+      justify-content: space-between;
+    }
+    @media (min-width: @screen-lg) {
+      width: @container-lg;
+    }
+  }
+
+    &__address {
+      font-family: @fira-sans-reg;
+      font-size: @font-size-14;
+      color: @gray-darker;
+
+      @media (min-width: 0px){
+        display: none;
+      }
+      @media (min-width: @screen-md) {
+        display: inline-block;
+      }
+    }
+
+
+    &__contacts a {
+      text-decoration: none;
+      font-family: @fira-sans-reg;
+      font-size: @font-size-14;
+      color: @gray-darker;
+
+      @media (min-width: 0px) {
+        display: none;
+      }
+      @media (min-width: @screen-md) {
+        display: inline-block;
+      }
+    }
+
+    &__links {
+      @media (min-width: 0px) and (max-width: 320px) {
+        margin: 0 auto;
+      }
+    }
+
 }
