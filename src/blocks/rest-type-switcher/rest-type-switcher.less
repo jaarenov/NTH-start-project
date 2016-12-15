@@ -4,5 +4,49 @@
 
 
 .rest-type-switcher {
-  
+
+
+  &__inner {
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: @screen-sm) {
+      width: @container-sm;
+    }
+    @media (min-width: @screen-md) {
+      width: @container-md;
+    }
+    @media (min-width: @screen-lg) {
+      width: @container-lg;
+    }
+  }
+
+  #Family:checked ~ .item--one  {
+    display: block;
+  }
+
+  #Corp:checked ~ .item--two  {
+    display: block;
+  }
+
+  &__type-item {
+    // display: none;
+    order: 1;
+  }
+
+
+
+  // .s {
+  //   order: 0;
+  // }
+}
+
+
+
+
+input[type=radio] {
+  display: none;
 }

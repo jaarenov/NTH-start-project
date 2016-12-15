@@ -5,63 +5,72 @@
 @ @include('blocks/rest-type-switcher/rest-type-switcher.html')
 
 -->
+
+<ul class="tabs-nav">
+<li class="tabs-nav__item is-active"><a href="#tab1">First</a></li>
+<li class="tabs-nav__item"><a href="#tab2">Second</a></li>
+</ul>
+
+<div class="tabs-content">
+<div id="tab1" class="tabs-content__item is-active">Первый табчик. Любопытство - вот, что заставляет нас двигаться.</div>
+<div id="tab2" class="tabs-content__item">Ты открыл второй табчик! Мы же говорили: любопытство - вот, что заставляет нас двигаться.</div>
+</div>
+
+
 <div class="rest-type-switcher">
 
-  <ul class="rest-type-switcher__tab">
-    <li class="rest-type-switcher__tab-item  rest-type-switcher__tab-item--active"><a href="#rest-family">Семейный отдых</a></li>
-    <li class="rest-type-switcher__tab-item"><a href="#rest-corp">Корпоративный</a></li>
-  </ul>
 
-  <div class="rest-type-switcher__type">
-    <section id="rest-family" class="rest-type-switcher__type-item  rest-type-switcher__type-item--active">
-      <div class="rest-type-switcher__type-inner">
-        <h1 class="rest-type-switcher__type-tittle">Семейный отдых на берегу Финского залива</h1>
-        <p>Green Valley - это современная база отдыха в куортном районе для здорового отдыха всей семьей.</p>
-      </div>
-    </section>
-    <section id="rest-corp" class="rest-type-switcher__type-item  rest-type-switcher__type-item--active">
-      <div class="rest-type-switcher__type-inner">
-        <h1 class="rest-type-switcher__type-tittle">Корпаративный отдых</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <ul class="rest-type-switcher__options-list">
-          <li>
-            <span class="rest-type-switcher__option-pic" style="background-image: url();"></span>
-            <span class="rest-type-switcher__option-text">Предоставляемые услуги</span>
-          </li>
-        </ul>
-      </div>
-    </section>
+<div class="d">  <input type="radio" name="type" value="Family" id='Family' checked/>
+  <label for="Family">Семейный отдых</label>
+
+  <input type="radio" name="type" value="Corp" id='Corp'/>
+  <label for="Corp">Корпоративный</label>
   </div>
 
-  <div class="rest-type-switcher__options">
-    <section id="rest-family" class="rest-type-switcher__options-item  rest-type-switcher__options-item--active">
-      <div class="rest-type-switcher__options-inner">
-        <h1 class="rest-type-switcher__options-tittle">Здоровый отдых</h1>
-        <p>Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых!</p>
-        <ul class="rest-type-switcher__options-list">
-          <li><img src="" alt="">Бассейн</li>
-          <li><img src="" alt="">Спортивная площадка</li>
-          <li><img src="" alt="">Бильярд</li>
-          <li><img src="" alt="">СПА</li>
-          <li><img src="" alt="">Бани</li>
-          <li><img src="" alt="">Анимация</li>
-        </ul>
-      </div>
-    </section>
-    <section id="rest-corp" class="rest-type-switcher__options-item  rest-type-switcher__options-item--active">
-      <div class="rest-type-switcher__options-inner">
-        <h1 class="rest-type-switcher__options-tittle">Нездоровый отдых</h1>
-        <p>Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых!</p>
-        <ul class="rest-type-switcher__options-list">
-          <li><img src="" alt="">Бассейн</li>
-          <li><img src="" alt="">Спортивная площадка</li>
-          <li><img src="" alt="">Бильярд</li>
-          <li><img src="" alt="">СПА</li>
-          <li><img src="" alt="">Бани</li>
-          <li><img src="" alt="">Анимация</li>
-        </ul>
-      </div>
-    </section>
-  </div>
+
+  <section class="rest-type-switcher__type-item item--one">
+    <div class="rest-type-switcher__type-inner">
+      <h1 class="rest-type-switcher__type-tittle">Семейный отдых на берегу Финского залива</h1>
+      <p>Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семьей.</p>
+    </div>
+  </section>
+  <section class="rest-type-switcher__type-item item--two">
+    <div class="rest-type-switcher__type-inner">
+      <h1 class="rest-type-switcher__type-tittle">Корпаративный отдых на берегу Финского залива</h1>
+      <p>Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семьей.</p>
+    </div>
+  </section>
+
+
+
+
+  <section id="rest-family" class="rest-type-switcher__options-item  rest-type-switcher__options-item--active">
+    <div class="rest-type-switcher__options-inner">
+      <h1 class="rest-type-switcher__options-tittle">Здоровый отдых</h1>
+      <p>Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых!</p>
+      <ul class="rest-type-switcher__options-list">
+        <li><img src="" alt="">Бассейн</li>
+        <li><img src="" alt="">Спортивная площадка</li>
+        <li><img src="" alt="">Бильярд</li>
+        <li><img src="" alt="">СПА</li>
+        <li><img src="" alt="">Бани</li>
+        <li><img src="" alt="">Анимация</li>
+      </ul>
+    </div>
+  </section>
+  <section id="rest-corp" class="rest-type-switcher__options-item  rest-type-switcher__options-item--active">
+    <div class="rest-type-switcher__options-inner">
+      <h1 class="rest-type-switcher__options-tittle">Нездоровый отдых</h1>
+      <p>Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых!</p>
+      <ul class="rest-type-switcher__options-list">
+        <li><img src="" alt="">Бассейн</li>
+        <li><img src="" alt="">Спортивная площадка</li>
+        <li><img src="" alt="">Бильярд</li>
+        <li><img src="" alt="">СПА</li>
+        <li><img src="" alt="">Бани</li>
+        <li><img src="" alt="">Анимация</li>
+      </ul>
+    </div>
+  </section>
 
 </div>
